@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando a média do Aluno</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculando suas Médias v. 1.0</h1>
+    </header>
+    <main id="aq">
+        <section>
+            <button onclick="med()">Média</button>
+            <script>
+                function med(){
+                    let n1 = Number(prompt('Digite Sua Nota 1','1'))
+                    let n2 = Number(prompt('digite sua Nota 2','1'))
+                    let md=(n1+n2)/2
+
+                    let recb = document.getElementById('aq')
+                    recb.innerHTML = `Sua Nota 1 = ${n1} <br> Sua Nota 2 = ${n2} <br> Sua Média   = <mark> ${md.toFixed(2)}</mark>`
+
+                }
+                </script>
+        </section>
+    </main>
+</body>
+</html>

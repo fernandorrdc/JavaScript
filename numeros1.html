@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando Com números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Trabalhando com Números
+        </h1>
+    </header>
+    <main>
+        <section>
+            <div id="resp">calculando...</div>
+            <button onclick="foi()">Clicando</button>
+                <script>
+                    alert('seja bm vindo(a)!\n clique no botão!')
+
+                    function foi(){
+
+                        let vai = Number(window.prompt('Digite um Número:','0'))
+                        let rec = document.getElementById('resp')
+                        rec.innerHTML=`O dobro de<strong> ${vai}</strong> é ${vai*2} e a metade é ${vai/2}`
+
+                    }
+                </script>
+        </section>
+    </main>
+    <footer>
+        trabalhando com javaScript
+    </footer>
+    
+</body>
+</html>

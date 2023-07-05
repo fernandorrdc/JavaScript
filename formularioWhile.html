@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário condicional while</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Preencha o Formulário</h1>
+    </header>
+    <main>
+        <section>
+            <script>
+                
+                function condicao(){ 
+
+                while(form1.nome.value==""){ 
+                alert("Favor Preencher o campo"); 
+                form1.nome.value=prompt("Digite seu nome agora",""); 
+                } 
+                alert("Obrigado, "+form1.nome.value); 
+                } 
+                </script> 
+                
+                <form name="form1"> 
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" onblur="condicao(this.value)"> 
+                    <button onclick="condicao()">Manda ai</button>
+                </form>   
+            </script>
+        </section>
+    </main>
+
+</body>
+</html>

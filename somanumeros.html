@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma entre dois Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Soma entre os Números</h1>
+    </header>
+    <main>
+        <button onclick="soma()">Soma</button>
+        <section id="loc">
+          
+            <script>
+                function soma() {
+                    let num1 = Number(prompt('Digite o 1º Número:'))
+                    let num2 = Number(prompt('Digite o 2º Número:'))
+                    let recb = document.querySelector('#loc')
+                    recb.innerHTML = `A soma entre : <strong> ${num1}</strong> e <strong>${num2}</strong> = <strong>${num1+num2}</strong>`
+                }
+
+            </script>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculos variados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onunload="sair()" onload="defaultStatus('Sua presença é muito importante!')">
+    <header>
+        <h1>Criando vários cálculos</h1>
+    </header>
+    <article>
+        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">google</a><br>
+    </article>
+    <main>
+        <section id="aki">
+            <p>Seu resultdo..</p>
+            <script>
+                function calc() {
+
+                    let nu1 = Number(prompt('Informe um Número','1'))
+                    let rcb = document.querySelector('#aki')
+                    rcb.innerHTML = `Número analisado é <strong>${nu1}</strong><hr>`
+                    rcb.innerHTML += `valor absoluto = ${Math.abs(nu1)}<br>`
+                    rcb.innerHTML += `Sua parte inteira = ${Math.trunc(nu1)}<br>`
+                    rcb.innerHTML += `Sua inteiro mais Próximo = ${Math.round(nu1)}<br>`
+                    rcb.innerHTML += `Sua raiz quadrada = ${Math.sqrt(nu1)}<br>`
+                    rcb.innerHTML += `Sua raiz cúbica = ${Math.cbrt(nu1)}<br>`
+                    rcb.innerHTML += `Elevando o N<sup>2</sup> = ${Math.pow(nu1,2)}<br>`
+                    rcb.innerHTML += `Elevando o N<sup>3</sup> = ${Math.pow(nu1,3)}`
+
+                 }
+            </script>
+        </section>
+        <button onclick="calc()">calcular</button>
+            <script>
+                function sair() {
+                    window.alert('Obrigado, pela sua visita!\n volte Sempre')
+                    
+                }
+            </script>
+    </main>
+    
+</body>
+</html>
